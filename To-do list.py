@@ -22,7 +22,7 @@ def adding_tasks():
             break
 def completing_taks():
     if a==[]:
-        print ("Your to-do list is empty")
+        print ("You have no tasks in your to-do list")
         return
     while True:
         d=input("Enter The Task you have completed from the To-do list: ")
@@ -32,10 +32,12 @@ def completing_taks():
                 print ("All tasks Completed")
                 break
             else:
-                print("Taks left")
+                print("Tasks left")
                 print(a)
                 e=input("Have you completed any more tasks(Yes/No): ")
                 if e.upper()=="NO":
+                    print("Tasks left")
+                    print(a)
                     break
                 elif e.upper() not in ("YES","NO"):
                     print ("Invalid Input")
